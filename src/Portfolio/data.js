@@ -1,13 +1,5 @@
 const Project = [
   {
-    id: 1,
-    name: "MovieBox Website",
-    link: "https://olawoyin-moviebox.netlify.app/",
-    image: "../../Images/moviebox.jpeg",
-    desc: "A website to stream your favourite movie | Created with React Js , Framer Motion - Animation",
-    language: "",
-  },
-  {
   "id": 6,
   "name": "Price Personal Healthcare",
   "link": "https://pricepersonalhealthcare.com",
@@ -36,7 +28,7 @@ const Project = [
     name: "U-Secured Landing Page",
     link: "https://u-secured.netlify.app/",
     image: "../../Images/u-secured.png",
-    desc: "Safety tech web application.",
+    desc: "Collaborated with another developer to build a Safety tech web application to display the solution the company is trying to provide for potential clients.",
     language: "",
   },
   {
@@ -49,18 +41,10 @@ const Project = [
   },
   {
     id: 1,
-    name: "E-commerce Website",
-    link: "https://olawoyin-ecommerce.netlify.app/",
-    image: "../../Images/e-commerce.jpeg",
-    desc: "User friendly E-commerce website created with Reactjs, Bootsrtap, Framer Motion.",
-    language: "",
-  },
-  {
-    id: 1,
     name: "360 Unique Designs",
     link: "https://olawoyin-construction.netlify.app/",
     image: "../../Images/konstruction.jpeg",
-    desc: "Construction Website landing page built with React.js for a client",
+    desc: "Collaborated with another developer to build a construction Website landing page built with React.js for a client",
     language: "",
   },
   {
@@ -68,7 +52,7 @@ const Project = [
     name: "Lana Renovations",
     link: "https://ahmed-web-project.vercel.app/index.html",
     image: "../../Images/Lana-Renovations.png",
-    desc: "End-to-end digital solution for a UK-based home renovation brand, crafted to elevate local market credibility through a fully responsive 5-page website built with modern HTML5, CSS3, and JavaScript—blending aesthetic clarity with SEO-optimized structure, accessible design, and mobile-first performance to establish a compelling and trustworthy online presence.",
+    desc: "End-to-end digital solution for a UK-based home renovation brand, crafted to elevate local market credibility through a fully responsive website with SEO-optimized structure, accessible design, and mobile-first performance to establish a compelling and trustworthy online presence.",
     language: "",
   },
 ];

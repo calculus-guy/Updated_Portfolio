@@ -12,10 +12,6 @@ import Footer from './Footer/Footer.jsx';
 import React from 'react';
 import Experience from './Experience.jsx';
 
-
-
-
-
 function App() {
 
   const [toggle, setToggle] = React.useState(false)
@@ -28,7 +24,6 @@ function App() {
     backgroundColor: toggle ? '#171717' : '#FAFAFA',
     color: toggle ? '#FFFFFF' : '#333333',
   }
-
 
   return (
     <HelmetProvider>
