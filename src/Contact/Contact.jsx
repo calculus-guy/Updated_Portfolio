@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser';
 import { RiMailSendLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
 import { VscSend } from "react-icons/vsc";
@@ -59,26 +60,32 @@ const Contact = () => {
 
 
 
-    const [formData, setFormData] = useState({
-        name : "",
-        email : "",
-        message : ""
-    })
-
-    
-    const handleChange = (event) => {
-        const {name , value} = event.target
-        setFormData((prevFormData) => {
-            return{
-                ...prevFormData,
-                [name] : value
+    const form = useRef(null);
+    const [sending, setSending] = useState(false);
+    const [sent, setSent] = useState(false);
+    // console.log(import.meta.env.REACT_APP_EMAILJS_SERVICE_ID, import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID, import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setSending(true);
+        setSent(false);
+        emailjs.sendForm(
+  process.env.REACT_APP_EMAILJS_SERVICE_ID,
+  process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+  form.current,
+  process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+            () => {
+                setSending(false);
+                setSent(true);
+                form.current?.reset();
+                setTimeout(() => setSent(false), 4000);
+            },
+            () => {
+                setSending(false);
+                alert('Failed to send message. Please try again later.');
             }
-        })
-    }
-
-    const handleSubmit = (event) => {
-        event.preventDefault()
-
+        );
     }
     
   return (
@@ -117,36 +124,31 @@ const Contact = () => {
                     <div className="sec-header py-4 text-center">
                         <h6 className='fw-bold'>Write Me Your Project</h6>
                     </div>
-                    <form action="" onSubmit={handleSubmit} className='contact-form'>
+                    <form ref={form} onSubmit={sendEmail} className='contact-form'>
                         <input 
                             className='mb-3' 
                             type="text" 
                             placeholder='Enter Your Name' 
                             name='name'
-                            value={formData.name}
-                            onChange={handleChange}
+                            required
                         />
                         <input 
                             className='mb-3' 
                             type="email" 
                             placeholder='Enter Your Email' 
                             name='email'
-                            value={formData.email}
-                            onChange={handleChange}
+                            required
                         />
                         <textarea 
                             className='mb-3' 
                             name="message" 
                             placeholder='Tell me About Your Project' 
                             id="message"  
-                            value={formData.message}
-                            onChange={handleChange}
+                            required
                         />
-                        <button className='works'>
-                           
-                            <p>Send Message</p>
+                        <button className='works' type="submit" disabled={sending || sent}>
+                            <p>{sending ? 'Sending...' : sent ? 'Message Sent!' : 'Send Message'}</p>
                             <VscSend size={20} />
-                        
                         </button>
                     </form>
                 </motion.div>

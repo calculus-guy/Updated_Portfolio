@@ -82,7 +82,7 @@ const Portfolio = () => {
                       <div className="port-content d-flex flex-column gap-2 p-3">
                         <h6 className='fw-bold'>{item.name}</h6>
                         <small  className='text-muted'>{item.desc}</small>
-                        <a href={item.link} className='se d-flex align-items-center gap-2 fw-semibold fw-'><GoLinkExternal size={14}/>Live Demo </a>
+                        <a target='blank' href={item.link} className='se d-flex align-items-center gap-2 fw-semibold fw-'><GoLinkExternal size={14}/>Live Demo </a>
                       </div>
                     </motion.div>
                   )

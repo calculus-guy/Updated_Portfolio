@@ -10,17 +10,25 @@ const Project = [
   {
     id: 3,
     name: "Gulf Of Guinea Oil Exploration",
-    link: "https://ggoex.vercel.app/",
+    link: "https://ggoex.com/",
     image: "../../Images/ggoex.png",
     desc: "Strategic digital presence for Gulf of Guinea Oil Exploration Limited, built to communicate its role in unlocking Nigeria’s offshore gas potential through innovative infrastructure, strategic partnerships, and ESG-driven investment platforms across West Africa’s energy frontier.",
-    language: "",
+    language: "React, Tailwind CSS",
   },
   {
   "id": 4,
   "name": "Anoh Gas Park",
-  "link": "https://acngpark.vercel.app/",
+  "link": "https://www.acngpark.com/",
   "image": "../../Images/acng.png",
   "desc": "Official platform for the Anoh CNG Industrial Park initiative — a catalytic project designed to revolutionize Nigeria’s gas-based industrialization by enabling decentralized energy access, manufacturing localization, and large-scale investment in compressed natural gas infrastructure.",
+  "language": "React, Tailwind CSS"
+  },
+  {
+  "id": 5,
+  "name": "Gulf Of Guinea Midstream",
+  "link": "https://www.ggmid.com/",
+  "image": "../../Images/ggmid.png",
+  "desc": "Digital showcase for Gulf of Guinea Midstream Limited, a strategically driven mid‑stream energy company in Nigeria—highlighting its core infrastructure investments, industrial gas park development (Anoh CNG Park), and integrated approach to sustainable gas monetization and regional energy logistics.",
   "language": "React, Tailwind CSS"
   },
   {

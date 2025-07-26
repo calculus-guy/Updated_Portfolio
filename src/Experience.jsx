@@ -51,6 +51,21 @@ responsibilities: [
 ]
     },
     {
+      role: "Freelance Frontend Developer",
+      company: "Gulf Of Guinea Midstream Limited.",
+      type: "Remote",
+      duration: "07/2025",
+responsibilities: [
+  "Developed a corporate midstream gas website using React with Tailwind CSS to reflect energy-sector professionalism and regional branding.",
+  "Integrated scroll-aware navigation and section anchoring to guide users through multi-segment company insights and infrastructure goals.",
+  "Engineered mobile-first layouts with advanced breakpoint handling to ensure optimal viewing across all devices and screen sizes.",
+  "Built clean modular page structure for scalability, including dynamic sections like Leadership, Strategic Partnerships, and Gas Infrastructure.",
+  "Applied on-scroll animation effects using Framer Motion to highlight key statistics, values, and company milestones.",
+  "Implemented accessibility features and SEO-friendly tags to support discoverability and inclusive design practices.",
+  "Deployed the project on Vercel with CI/CD hooks to allow seamless version control and live feedback from the client."
+]
+    },
+    {
       role: "Full-Stack Software Developer",
       company: "Home Choice Security Network",
       type: "Hybrid",
