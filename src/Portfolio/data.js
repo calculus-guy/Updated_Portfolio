@@ -1,19 +1,19 @@
 const Project = [
   {
-  "id": 6,
-  "name": "Price Personal Healthcare",
-  "link": "https://pricepersonalhealthcare.com",
-  "image": "../../Images/price.png",
-  "desc": "Personalized healthcare platform providing virtual and in-home services including nursing, support, and wellness care for individuals and families.",
+  "id": 7,
+  "name": "AFRIMA: ALL AFRICA MUSIC AWARDS",
+  "link": "https://afrima.org",
+  "image": "../../Images/afrima_org.png",
+  "desc": "Contributed as part of the development team behind AFRIMA’s global digital presence. Supported the build and enhancement of the platform’s architecture and user experience, ensuring scalability for high-traffic events. Collaborated on visual and functional modules that power artist showcases, news updates, and award engagement across Africa’s music industry.",
   "language": "React, Tailwind CSS"
   },
   {
-    id: 3,
-    name: "Gulf Of Guinea Oil Exploration",
-    link: "https://ggoex.com/",
-    image: "../../Images/ggoex.png",
-    desc: "Strategic digital presence for Gulf of Guinea Oil Exploration Limited, built to communicate its role in unlocking Nigeria’s offshore gas potential through innovative infrastructure, strategic partnerships, and ESG-driven investment platforms across West Africa’s energy frontier.",
-    language: "React, Tailwind CSS",
+  "id": 7,
+  "name": "AFRIMA: Adjudication Portal",
+  "link": "https://www.afrimajury.com",
+  "image": "../../Images/afrima_jury.png",
+  "desc": "A Full-Stack Adjudication system powering Africa’s premier music awards, built to streamline jury evaluations across regional and continental categories. I led backend development with Node.js, Express, and MongoDB, designing secure APIs, dynamic scoring and ranking logic, and automated PDF/Excel reporting. The platform enables transparent judging with role-based dashboards and activity logging for audit-ready results.",
+  "language": "React, Tailwind CSS"
   },
   {
   "id": 4,
@@ -30,6 +30,22 @@ const Project = [
   "image": "../../Images/ggmid.png",
   "desc": "Digital showcase for Gulf of Guinea Midstream Limited, a strategically driven mid‑stream energy company in Nigeria—highlighting its core infrastructure investments, industrial gas park development (Anoh CNG Park), and integrated approach to sustainable gas monetization and regional energy logistics.",
   "language": "React, Tailwind CSS"
+  },
+   {
+  "id": 6,
+  "name": "Price Personal Healthcare",
+  "link": "https://pricepersonalhealthcare.com",
+  "image": "../../Images/price.png",
+  "desc": "Personalized healthcare platform providing virtual and in-home services including nursing, support, and wellness care for individuals and families.",
+  "language": "React, Tailwind CSS"
+  },
+  {
+    id: 3,
+    name: "Gulf Of Guinea Oil Exploration",
+    link: "https://ggoex.com/",
+    image: "../../Images/ggoex.png",
+    desc: "Strategic digital presence for Gulf of Guinea Oil Exploration Limited, built to communicate its role in unlocking Nigeria’s offshore gas potential through innovative infrastructure, strategic partnerships, and ESG-driven investment platforms across West Africa’s energy frontier.",
+    language: "React, Tailwind CSS",
   },
   {
     id: 1,
