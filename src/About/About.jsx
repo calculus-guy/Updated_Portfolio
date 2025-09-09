@@ -165,7 +165,7 @@ const About = () => {
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         transition={{
-                                          delay: index * 0.03, // Adjust typing speed
+                                          delay: index * 0.015, // Adjust typing speed
                                         }}
                                       >
                                         {char}
@@ -179,12 +179,14 @@ const About = () => {
                     </motion.div>
                     {isInView && (
                     <motion.a
-                       href="../../Images/Abdul-Lateef-Sakariyau-Resume (1).pdf"
+                       href="../../Images/Abdul-Lateef-Sakariyau-Resume(1).pdf"
                        className="works"
+                     target="_blank" // Open in new tab
+                      rel="noopener noreferrer" // Security best practice
                        initial={{ x: 100, opacity: 0 }}
                        animate={{ x: 0, opacity: 1 }}
                        transition={{
-                         delay: paragraphText2.length * 0.03 + 1, // Start after text animation
+                         delay: paragraphText2.length * 0.015 + 1, // Start after text animation
                          duration: 0.5,}}
                       >
                         <p>Download CV</p>
