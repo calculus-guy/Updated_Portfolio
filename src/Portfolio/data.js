@@ -5,7 +5,7 @@ const Project = [
   "link": "https://afrima.org",
   "image": "../../Images/afrima_org.png",
   "desc": "Contributed as part of the development team behind AFRIMA’s global digital presence. Supported the build and enhancement of the platform’s architecture and user experience, ensuring scalability for high-traffic events. Collaborated on visual and functional modules that power artist showcases, news updates, and award engagement across Africa’s music industry.",
-  "language": "React, Tailwind CSS"
+  "language": "React, Tailwind CSS, Node.js, Express, MongoDB"
   },
   {
   "id": 7,
@@ -13,7 +13,7 @@ const Project = [
   "link": "https://www.afrimajury.com",
   "image": "../../Images/afrima_jury.png",
   "desc": "A Full-Stack Adjudication system powering Africa’s premier music awards, built to streamline jury evaluations across regional and continental categories. I led backend development with Node.js, Express, and MongoDB, designing secure APIs, dynamic scoring and ranking logic, and automated PDF/Excel reporting. The platform enables transparent judging with role-based dashboards and activity logging for audit-ready results.",
-  "language": "React, Tailwind CSS"
+  "language": "React, Tailwind CSS, Node.js, Express, MongoDB"
   },
   {
   "id": 4,
@@ -38,6 +38,14 @@ const Project = [
   "image": "../../Images/price.png",
   "desc": "Personalized healthcare platform providing virtual and in-home services including nursing, support, and wellness care for individuals and families.",
   "language": "React, Tailwind CSS"
+  },
+   {
+  "id": 7,
+  "name": "FinCalc: Expense Tracker",
+  "link": "https://fin-calc-beta.vercel.app/login",
+  "image": "../../Images/fincalc.png",
+  "desc": "FinCalc, a Full-Stack SaaS Finance Management Platform, designed to empower individuals with secure authentication, intuitive expense tracking, real-time data visualization, and seamless Excel exports—already trusted by 15+ users as a testament to my end-to-end engineering expertise.",
+  "language": "React, Tailwind CSS, Node.js, Express, MongoDB"
   },
   {
     id: 3,
