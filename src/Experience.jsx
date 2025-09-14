@@ -5,7 +5,7 @@ import { CiCircleCheck } from "react-icons/ci";
 
 const experiences = [
     {
-      role: "Backend Developer",
+      role: "Senior Software Engineer",
       company: "AFRIMA: Africa's Global Music Award",
       type: "Remote",
       duration: "05/2025 – Present",
