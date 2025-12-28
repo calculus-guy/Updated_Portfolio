@@ -179,7 +179,7 @@ const About = () => {
                     </motion.div>
                     {isInView && (
                     <motion.a
-                       href="../../Images/Abdul-Lateef-Sakariyau-Resume(1).pdf"
+                       href="../../Images/Abdul-Lateef Resume.pdf"
                        className="works"
                      target="_blank" // Open in new tab
                       rel="noopener noreferrer" // Security best practice

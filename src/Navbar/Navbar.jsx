@@ -81,16 +81,16 @@ const Navbar = ({handleToggle, toggle, styles}) => {
                     initial="initial"
                     animate="animate"
                 >
-                    <a href="https://github.com/calculus-guy/">
+                    <a href="https://github.com/calculus-guy/" target="_blank" rel="noopener noreferrer">
                         <VscGithubAlt />
                     </a>
-                    <motion.a variants={childVariants} href="https://x.com/lateef016?t=5EoL1Yn-twyOx221H7V1vA&s=08">
+                    <motion.a variants={childVariants} href="https://x.com/lateef016?t=5EoL1Yn-twyOx221H7V1vA&s=08" target="_blank" rel="noopener noreferrer">
                         <FaXTwitter />
                     </motion.a>
-                    <motion.a variants={childVariants} href="https://www.linkedin.com/in/abdul-lateef-sakariyau-5a799b324">
+                    <motion.a variants={childVariants} href="https://www.linkedin.com/in/abdul-lateef-sakariyau-38289a383" target="_blank" rel="noopener noreferrer">
                         <SlSocialLinkedin />
                     </motion.a>
-                    <motion.a variants={childVariants} href="https://www.upwork.com/freelancers/~01aa52e16a2b978ee8?mp_source=share">
+                    <motion.a variants={childVariants} href="https://www.upwork.com/freelancers/~01aa52e16a2b978ee8?mp_source=share" target="_blank" rel="noopener noreferrer">
                         <SiUpwork />
                     </motion.a>
                     <motion.a variants={childVariants} href="/" onClick={handleToggle}>

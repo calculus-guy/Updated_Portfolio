@@ -33,18 +33,18 @@ const Project = [
   },
    {
   "id": 6,
-  "name": "Price Personal Healthcare",
-  "link": "https://pricepersonalhealthcare.com",
-  "image": "../../Images/price.png",
-  "desc": "Personalized healthcare platform providing virtual and in-home services including nursing, support, and wellness care for individuals and families.",
-  "language": "React, Tailwind CSS"
+  "name": "Yupacgo : AI-Powered Investment Platform",
+  "link": "https://www.yupacgo.com/",
+  "image": "../../Images/yupacgo.png",
+  "desc": "Yupacgo, a backend-driven investor recommendation platform, built to deliver personalized stock insights through secure onboarding, rule-based intelligence, live market data aggregation, and virtual portfolios—showcasing my ability to design scalable, data-intensive financial systems end-to-end.",
+  "language": "Node.js, React, Tailwind CSS, MongoDB, Express, Redis"
   },
-   {
+  {
   "id": 7,
   "name": "FinCalc: Expense Tracker",
   "link": "https://fin-calc-beta.vercel.app/login",
   "image": "../../Images/fincalc.png",
-  "desc": "FinCalc, a Full-Stack SaaS Finance Management Platform, designed to empower individuals with secure authentication, intuitive expense tracking, real-time data visualization, and seamless Excel exports—already trusted by 15+ users as a testament to my end-to-end engineering expertise.",
+  "desc": "FinCalc, a Full-Stack SaaS Finance Management Platform, designed to empower individuals with secure authentication, intuitive expense tracking, real-time data visualization, and seamless Excel exports—already trusted by 1000+ users as a testament to my end-to-end engineering expertise.",
   "language": "React, Tailwind CSS, Node.js, Express, MongoDB"
   },
   {
@@ -57,26 +57,26 @@ const Project = [
   },
   {
     id: 1,
-    name: "U-Secured Landing Page",
-    link: "https://u-secured.netlify.app/",
-    image: "../../Images/u-secured.png",
-    desc: "Collaborated with another developer to build a Safety tech web application to display the solution the company is trying to provide for potential clients.",
+    name: "Pinkyshelbybeauty Fashion Store",
+    link: "https://pinkyshelbybeauty.com/",
+    image: "../../Images/pinky.png",
+    desc: "Built full e-commerce stack with JWT auth, multi-role access, real-time stock, paystack integration; improved checkout completion by ~20%.",
     language: "",
   },
   {
     id: 1,
-    name: "Biomej Healthcare Ltd.",
-    link: "https://biomejhealthcare.com",
-    image: "../../Images/medical.jpeg",
-    desc: "A pharmaceutical landing page website built for a client to showcase their products and services.",
+    name: "SoleComfortShoes (US-based Retail Brand)",
+    link: "https://solecomfort.shoes/",
+    image: "../../Images/solecomfort.png",
+    desc: "Developed a responsive e-commerce storefront for a U.S. footwear company; implemented secure checkout, optimized product discovery, and performance tuning to support cross-border customers.",
     language: "",
   },
   {
     id: 1,
-    name: "360 Unique Designs",
-    link: "https://olawoyin-construction.netlify.app/",
-    image: "../../Images/konstruction.jpeg",
-    desc: "Collaborated with another developer to build a construction Website landing page built with React.js for a client",
+    name: "aahbibi : Live Classes Platform",
+    link: "https://www.aahbibi.com/",
+    image: "../../Images/aahbibi.png",
+    desc: "Empowering creators to share their knowledge and passion with the world through live and interactive classes.",
     language: "",
   },
   {
