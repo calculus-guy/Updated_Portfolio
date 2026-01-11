@@ -8,20 +8,36 @@ const Project = [
   "language": "React, Tailwind CSS, Node.js, Express, MongoDB"
   },
   {
+    id: 1,
+    name: "aahbibi : Live Classes Platform",
+    link: "https://www.aahbibi.com/",
+    image: "../../Images/aahbibi.png",
+    desc: "A scalable EdTech and creator platform designed to power video-on-demand, live classes, and gamified learning experiences. I led backend development using Node.js, Express, PostgreSQL, and Redis, building secure role-based APIs, live class infrastructure, wallet and payment systems, and quiz-based engagement logic. The platform supports real-time sessions, subscriptions, and creator monetization with production-ready performance and reliability.",
+    language: "",
+  },
+  {
+  "id": 8,
+  "name": "DFX Limited : Multi-Module Business Platform",
+  "link": "https://www.dfxlimited.com",
+  "image": "../../Images/dfx.png",
+  "desc": "A modular multi-service digital platform built to support IT training enrollment, gadget e-commerce, and agency lead management under a unified system. I led backend development using Node.js, Express, and MongoDB, designing secure role-based APIs, payment integrations, file uploads for course materials, and admin dashboards. The platform emphasizes scalability, clean architecture, and reliable workflows for real-world business operations.",
+  "language": "React, Tailwind CSS, Node.js, Express, MongoDB"
+  },
+     {
+  "id": 6,
+  "name": "Yupacgo : AI-Powered Investment Platform",
+  "link": "https://www.yupacgo.com/",
+  "image": "../../Images/yupacgo.png",
+  "desc": "Yupacgo, a backend-driven investor recommendation platform, built to deliver personalized stock insights through secure onboarding, rule-based intelligence, live market data aggregation, and virtual portfolios—showcasing my ability to design scalable, data-intensive financial systems end-to-end.",
+  "language": "Node.js, React, Tailwind CSS, MongoDB, Express, Redis"
+  },
+  {
   "id": 7,
   "name": "AFRIMA: Adjudication Portal",
   "link": "https://www.afrimajury.com",
   "image": "../../Images/afrima_jury.png",
   "desc": "A Full-Stack Adjudication system powering Africa’s premier music awards, built to streamline jury evaluations across regional and continental categories. I led backend development with Node.js, Express, and MongoDB, designing secure APIs, dynamic scoring and ranking logic, and automated PDF/Excel reporting. The platform enables transparent judging with role-based dashboards and activity logging for audit-ready results.",
   "language": "React, Tailwind CSS, Node.js, Express, MongoDB"
-  },
-  {
-  "id": 4,
-  "name": "Anoh Gas Park",
-  "link": "https://www.acngpark.com/",
-  "image": "../../Images/acng.png",
-  "desc": "Official platform for the Anoh CNG Industrial Park initiative — a catalytic project designed to revolutionize Nigeria’s gas-based industrialization by enabling decentralized energy access, manufacturing localization, and large-scale investment in compressed natural gas infrastructure.",
-  "language": "React, Tailwind CSS"
   },
   {
   "id": 5,
@@ -31,13 +47,13 @@ const Project = [
   "desc": "Digital showcase for Gulf of Guinea Midstream Limited, a strategically driven mid‑stream energy company in Nigeria—highlighting its core infrastructure investments, industrial gas park development (Anoh CNG Park), and integrated approach to sustainable gas monetization and regional energy logistics.",
   "language": "React, Tailwind CSS"
   },
-   {
-  "id": 6,
-  "name": "Yupacgo : AI-Powered Investment Platform",
-  "link": "https://www.yupacgo.com/",
-  "image": "../../Images/yupacgo.png",
-  "desc": "Yupacgo, a backend-driven investor recommendation platform, built to deliver personalized stock insights through secure onboarding, rule-based intelligence, live market data aggregation, and virtual portfolios—showcasing my ability to design scalable, data-intensive financial systems end-to-end.",
-  "language": "Node.js, React, Tailwind CSS, MongoDB, Express, Redis"
+  {
+  "id": 4,
+  "name": "Anoh Gas Park",
+  "link": "https://www.acngpark.com/",
+  "image": "../../Images/acng.png",
+  "desc": "Official platform for the Anoh CNG Industrial Park initiative — a catalytic project designed to revolutionize Nigeria’s gas-based industrialization by enabling decentralized energy access, manufacturing localization, and large-scale investment in compressed natural gas infrastructure.",
+  "language": "React, Tailwind CSS"
   },
   {
   "id": 7,
@@ -69,14 +85,6 @@ const Project = [
     link: "https://solecomfort.shoes/",
     image: "../../Images/solecomfort.png",
     desc: "Developed a responsive e-commerce storefront for a U.S. footwear company; implemented secure checkout, optimized product discovery, and performance tuning to support cross-border customers.",
-    language: "",
-  },
-  {
-    id: 1,
-    name: "aahbibi : Live Classes Platform",
-    link: "https://www.aahbibi.com/",
-    image: "../../Images/aahbibi.png",
-    desc: "Empowering creators to share their knowledge and passion with the world through live and interactive classes.",
     language: "",
   },
   {

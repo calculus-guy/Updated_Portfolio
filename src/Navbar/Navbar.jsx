@@ -93,19 +93,37 @@ const Navbar = ({handleToggle, toggle, styles}) => {
                     <motion.a variants={childVariants} href="https://www.upwork.com/freelancers/~01aa52e16a2b978ee8?mp_source=share" target="_blank" rel="noopener noreferrer">
                         <SiUpwork />
                     </motion.a>
-                    <motion.a variants={childVariants} href="/" onClick={handleToggle}>
-
+                    <motion.button 
+                        variants={childVariants} 
+                        onClick={handleToggle}
+                        style={{ 
+                            background: 'none', 
+                            border: 'none', 
+                            cursor: 'pointer', 
+                            padding: 0,
+                            color: toggle ? '#FFFFFF' : '#333333'
+                        }}
+                    >
                         {
                             toggle ? <MdOutlineLightMode /> : <MdOutlineDarkMode />
                         }
-                    </motion.a>
+                    </motion.button>
                 </motion.div>
-                <a href="#li" className='d-flex d-lg-none' onClick={handleToggle}>
-
+                <button 
+                    className='d-flex d-lg-none' 
+                    onClick={handleToggle}
+                    style={{ 
+                        background: 'none', 
+                        border: 'none', 
+                        cursor: 'pointer', 
+                        padding: 0,
+                        color: toggle ? '#FFFFFF' : '#333333'
+                    }}
+                >
                     {
                         toggle ? <MdOutlineLightMode /> : <MdOutlineDarkMode />
                     }
-                </a>
+                </button>
                 {/* <RiMenu3Line className='d-flex d-lg-none' /> */}
             </div>
         </div>

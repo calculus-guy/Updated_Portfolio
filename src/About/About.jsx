@@ -103,7 +103,13 @@ const About = () => {
       const isInView = useInView(paragraphRef, { once: true });
     
 
-      const paragraphText2 = `My name is Sakariyau Abdulateef, and for the past 5 years, I’ve dedicated myself to the craft of software engineering. I am a proud graduate of the University Of Lagos, where I honed my skills and built a strong foundation in programming. My passion lies in developing software that not only meets users' needs but also exceeds their expectations. \n \n I’m skilled in technologies like React.js, C Programming, TypeScript, Python, and Node Js, Express Js APIs, which have enabled me to work on a variety of projects with unique challenges and learning opportunities. I enjoy being part of a team where collaboration and continuous improvement are the norms, as I believe the best ideas and solutions come from shared effort. I’m eager to bring my expertise to a new opportunity where I can create impactful software, learn new things, and make a difference.`
+      const paragraphText2 = `I’m Sakariyau Abdulateef, a software engineer with over 5 years of experience building production-ready web platforms across fintech, media, and large-scale adjudication systems.
+
+I specialize in backend engineering with Node.js, Express, PostgreSQL, and MongoDB, designing secure APIs, role-based systems, and data-intensive workflows that scale reliably under real-world usage.
+
+I’ve led backend development for platforms like AFRIMA’s Adjudication Portal, investment recommendation systems, and creator-focused livestreaming products—owning everything from architecture and performance tuning to reporting and integrations.
+
+I care deeply about clean architecture, performance, and developer experience, and I enjoy collaborating with teams to turn complex requirements into simple, reliable software.`
 
       
 
@@ -165,7 +171,7 @@ const About = () => {
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         transition={{
-                                          delay: index * 0.015, // Adjust typing speed
+                                          delay: index * 0.008, // Adjust typing speed
                                         }}
                                       >
                                         {char}
@@ -186,7 +192,7 @@ const About = () => {
                        initial={{ x: 100, opacity: 0 }}
                        animate={{ x: 0, opacity: 1 }}
                        transition={{
-                         delay: paragraphText2.length * 0.015 + 1, // Start after text animation
+                         delay: paragraphText2.length * 0.008 + 1, // Start after text animation
                          duration: 0.5,}}
                       >
                         <p>Download CV</p>
