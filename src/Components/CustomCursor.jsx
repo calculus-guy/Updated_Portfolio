@@ -1,11 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const CustomCursor = ({ toggle }) => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isHovering, setIsHovering] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        // Check if mobile/tablet
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 1024);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
         const handleMouseMove = (e) => {
             setMousePosition({ x: e.clientX, y: e.clientY });
         };
@@ -26,10 +34,14 @@ const CustomCursor = ({ toggle }) => {
         window.addEventListener('mouseover', handleMouseOver);
 
         return () => {
+            window.removeEventListener('resize', checkMobile);
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('mouseover', handleMouseOver);
         };
     }, []);
+
+    // Don't render on mobile
+    if (isMobile) return null;
 
     const cursorColor = toggle ? '#FFFFFF' : '#333333';
 

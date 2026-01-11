@@ -32,10 +32,10 @@ const BackToTop = ({ toggle }) => {
                     whileTap={{ scale: 0.9 }}
                     style={{
                         position: 'fixed',
-                        bottom: '30px',
-                        right: '30px',
-                        width: '50px',
-                        height: '50px',
+                        bottom: '20px',
+                        right: '20px',
+                        width: '45px',
+                        height: '45px',
                         borderRadius: '50%',
                         border: 'none',
                         backgroundColor: toggle ? '#FAFAFA' : '#333333',
