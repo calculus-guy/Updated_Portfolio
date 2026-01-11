@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { RiMailSendLine } from "react-icons/ri";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
@@ -8,13 +8,33 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { SiUpwork } from "react-icons/si";
 import { motion } from 'framer-motion';
 
-const Navbar = ({handleToggle, toggle, styles}) => {
+const Navbar = ({handleToggle, toggle}) => {
     const [scrolled, setScrolled] = useState(false);
+    const [activeSection, setActiveSection] = useState('home');
+
+    const sections = ['home', 'about', 'skills', 'portfolio', 'contact'];
 
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
+
+            // Find active section
+            const scrollPosition = window.scrollY + 100;
+            
+            for (const section of sections) {
+                const element = document.getElementById(section);
+                if (element) {
+                    const offsetTop = element.offsetTop;
+                    const offsetHeight = element.offsetHeight;
+                    
+                    if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                        setActiveSection(section);
+                        break;
+                    }
+                }
+            }
         };
+        
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -83,21 +103,25 @@ const Navbar = ({handleToggle, toggle, styles}) => {
                 
                 <div className="d-none d-lg-flex mail links">
                     <ul className='d-flex gap-4 m-0'>
-                        <li className='nav-item'>
-                            <a className='nav-link' href="#home">Home</a>
-                        </li>
-                        <li className='nav-item'>
-                            <a className='nav-link' href="#about">About</a>
-                        </li>
-                        <li className='nav-item'>
-                            <a className='nav-link' href="#skills">Skills</a>
-                        </li>
-                        <li className='nav-item'>
-                            <a className='nav-link' href="#portfolio">Portfolio</a>
-                        </li>
-                        <li className='nav-item'>
-                            <a className='nav-link' href="#contact">Contact</a>
-                        </li>
+                        {sections.map((section) => (
+                            <li className='nav-item' key={section}>
+                                <a 
+                                    className='nav-link' 
+                                    href={`#${section}`}
+                                    style={{
+                                        fontWeight: activeSection === section ? '600' : '400',
+                                        color: activeSection === section 
+                                            ? (toggle ? '#FFFFFF' : '#333333')
+                                            : (toggle ? 'rgba(255,255,255,0.6)' : 'rgba(51,51,51,0.6)'),
+                                        borderBottom: activeSection === section ? '2px solid currentColor' : '2px solid transparent',
+                                        paddingBottom: '4px',
+                                        transition: 'all 0.3s ease',
+                                    }}
+                                >
+                                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <motion.div

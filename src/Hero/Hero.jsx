@@ -1,69 +1,32 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { VscBriefcase } from "react-icons/vsc";
-import { motion, useInView, useAnimation, AnimatePresence } from 'framer-motion';
+import { motion, useInView, useAnimation } from 'framer-motion';
 import SEO from "../SEO";
+import Typewriter from "../Components/Typewriter";
 
 
 const Hero = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const titles = ["Software Engineer", "Frontend Developer", "Backend Developer"];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [animationVariant, setAnimationVariant] = useState("fade");
 
   const mainControls = useAnimation();
   const slideControls = useAnimation();
-  const fadeUpControls = useAnimation(); // Animation for "Certified Software Engineer"
+  const fadeUpControls = useAnimation();
 
 
 
 
 
-  // Define animation styles
-const animationVariants = {
-  fade: {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 },
-    exit: { opacity: 0 },
-  },
-  slideUp: {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -20 },
-  },
-  slideLeft: {
-    initial: { opacity: 0, x: 40 },
-    animate: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: -40 },
-  },
-  scale: {
-    initial: { opacity: 0, scale: 0.8 },
-    animate: { opacity: 1, scale: 1 },
-    exit: { opacity: 0, scale: 0.8 },
-  },
-};
-
-// Rotate titles and choose random animation
-useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % titles.length);
-    
-    const keys = Object.keys(animationVariants);
-    const randomKey = keys[Math.floor(Math.random() * keys.length)];
-    setAnimationVariant(randomKey);
-  }, 5000);
-
-  return () => clearInterval(interval);
-}, []);
   useEffect(() => {
     if (isInView) {
       mainControls.start("animate");
       slideControls.start("animate");
       setTimeout(() => {
         fadeUpControls.start("animate");
-      }, 1400); // Delay to start after slide-in effect
+      }, 1400);
     }
-  }, [isInView]);
+  }, [isInView, mainControls, slideControls, fadeUpControls]);
 
   const heroVar = {
     initial: { x: 100, opacity: 0 },
@@ -131,19 +94,14 @@ useEffect(() => {
               </motion.h4> */}
 
               <motion.h4 className="cf d-flex gap-2" variants={fadeUpVar} initial="initial" animate={fadeUpControls}>
-              <span>Certified</span>
-              <AnimatePresence mode="wait">
-                <motion.span
-                  key={titles[currentIndex]}
-                  initial={animationVariants[animationVariant].initial}
-                  animate={animationVariants[animationVariant].animate}
-                  exit={animationVariants[animationVariant].exit}
-                  transition={{ duration: 0.6 }}
-                >
-                  {titles[currentIndex]}
-                </motion.span>
-              </AnimatePresence>
-            </motion.h4>
+                <span>Certified</span>
+                <Typewriter 
+                  words={titles} 
+                  typingSpeed={80} 
+                  deletingSpeed={40} 
+                  pauseTime={2000} 
+                />
+              </motion.h4>
 
 
 

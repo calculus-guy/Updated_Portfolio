@@ -12,6 +12,7 @@ import Footer from './Footer/Footer.jsx';
 import React from 'react';
 import Experience from './Experience.jsx';
 import CustomCursor from './Components/CustomCursor.jsx';
+import BackToTop from './Components/BackToTop.jsx';
 
 function App() {
 
@@ -33,7 +34,6 @@ function App() {
         <Navbar 
           handleToggle={handleToggle} 
           toggle={toggle} 
-          style={styles}
         />
         <Hero style={styles}/>
         <About style={styles}/>
@@ -42,6 +42,7 @@ function App() {
         <Portfolio />
         <Contact />
         <Footer />
+        <BackToTop toggle={toggle} />
       </main>
   </HelmetProvider>
    
