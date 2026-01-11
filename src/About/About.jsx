@@ -105,7 +105,7 @@ const About = () => {
 
       const paragraphText2 = `I’m Sakariyau Abdulateef, a software engineer with over 5 years of experience building production-ready web platforms across fintech, media, and large-scale adjudication systems.
 
-I specialize in backend engineering with Node.js, Express, PostgreSQL, and MongoDB, designing secure APIs, role-based systems, and data-intensive workflows that scale reliably under real-world usage.
+I specialize in backend engineering with Node.js, Express, PostgreSQL, and MongoDB, designing secure APIs, role-based systems, and data intensive workflows that scale reliably under real-world usage.
 
 I’ve led backend development for platforms like AFRIMA’s Adjudication Portal, investment recommendation systems, and creator-focused livestreaming products—owning everything from architecture and performance tuning to reporting and integrations.
 
@@ -163,7 +163,14 @@ I care deeply about clean architecture, performance, and developer experience, a
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 1 }}
-                                    style={{ whiteSpace: "pre-wrap", fontSize: "14px" }}
+                                    style={{ 
+                                      whiteSpace: "pre-wrap", 
+                                      fontSize: "14px",
+                                      textAlign: "justify",
+                                      hyphens: "auto",
+                                      WebkitHyphens: "auto",
+                                      wordBreak: "break-word",
+                                    }}
                                   >
                                     {paragraphText2.split("").map((char, index) => (
                                       <motion.span
