@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { RiMailSendLine } from "react-icons/ri";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
 import { VscGithubAlt } from "react-icons/vsc";
-import { RiMenu3Line } from "react-icons/ri";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 import { SiUpwork } from "react-icons/si";
 import { motion } from 'framer-motion';
 
 const Navbar = ({handleToggle, toggle, styles}) => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     
     
     const IconVariants = {
@@ -47,8 +55,25 @@ const Navbar = ({handleToggle, toggle, styles}) => {
     }
 
     
+    const navStyles = {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 1000,
+        transition: 'all 0.3s ease',
+        backgroundColor: scrolled 
+            ? (toggle ? 'rgba(18, 18, 18, 0.85)' : 'rgba(250, 250, 250, 0.85)')
+            : 'transparent',
+        backdropFilter: scrolled ? 'blur(12px)' : 'none',
+        WebkitBackdropFilter: scrolled ? 'blur(12px)' : 'none',
+        boxShadow: scrolled ? '0 4px 30px rgba(0, 0, 0, 0.1)' : 'none',
+        borderBottom: scrolled ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
+        color: toggle ? '#FFFFFF' : '#333333',
+    };
+
   return (
-    <header style={styles}>
+    <header style={navStyles}>
         <div className="container2">
             <div className="d-flex flex-wrap align-items-center header justify-content-between">
                 <a href='mailto:yustee2017@gmail.com' className="mail gap-2">

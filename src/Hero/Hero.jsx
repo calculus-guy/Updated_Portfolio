@@ -100,7 +100,7 @@ useEffect(() => {
   };
 
   return (
-    <div className="main">
+    <div className="main" id="home">
       <SEO 
         title="Sakariyau Abdulateef | Software Engineer " 
         description="I'm Sakariyau Abdulateef, a passionate software engineer specializing in React, Node Js, and full-stack development. Explore my projects and skills!" 

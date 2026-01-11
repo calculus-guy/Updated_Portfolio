@@ -118,7 +118,7 @@ I care deeply about clean architecture, performance, and developer experience, a
 
 
   return (
-    <motion.div className='about-section py-4'>
+    <motion.div className='about-section py-4' id='about'>
         <motion.div className="container2">
             <div className="sec-header mb-4 text-center ">
                 <h2 className="text-bold">About Me</h2>

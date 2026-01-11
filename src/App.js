@@ -11,6 +11,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Footer from './Footer/Footer.jsx';
 import React from 'react';
 import Experience from './Experience.jsx';
+import CustomCursor from './Components/CustomCursor.jsx';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <HelmetProvider>
+      <CustomCursor toggle={toggle} />
       <main className={toggle ? "dark" : "light"}>
         <Navbar 
           handleToggle={handleToggle} 
