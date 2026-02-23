@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { RiMailSendLine } from "react-icons/ri";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
@@ -12,7 +12,7 @@ const Navbar = ({handleToggle, toggle}) => {
     const [scrolled, setScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
 
-    const sections = ['home', 'about', 'skills', 'portfolio', 'contact'];
+    const sections = useMemo(() => ['home', 'about', 'skills', 'portfolio', 'contact'], []);
 
     useEffect(() => {
         const handleScroll = () => {
