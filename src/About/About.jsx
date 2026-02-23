@@ -103,7 +103,7 @@ const About = () => {
       const isInView = useInView(paragraphRef, { once: true });
     
 
-      const paragraphText2 = `I’m Sakariyau Abdulateef, a software engineer with over 5 years of experience building production-ready web platforms across fintech, media, and large-scale adjudication systems.
+      const paragraphText2 = `I’m Sakariyau Abdulateef, a software engineer with over 4 years of experience building production-ready web platforms across fintech, media, International Marketplace and large-scale adjudication systems.
 
 I specialize in backend engineering with Node.js, Express, PostgreSQL, and MongoDB, designing secure APIs, role-based systems, and data intensive workflows that scale reliably under real-world usage.
 
@@ -128,7 +128,7 @@ I care deeply about clean architecture, performance, and developer experience, a
             <motion.div variants={aboutVariant} initial="initial" animate="animate" className="row m-0 ">
                 <motion.div variants={leftVar} className="col-lg-6 px-4 py-lg-2">
                     <div className="about-img border">
-                        <img src="../../Images/Full_image2.jpeg" className='img-fluid' alt="" />
+                        <img src="../../Images/portfolio2.jpeg" className='img-fluid' alt="" />
                     </div>
                 </motion.div>
                 <motion.div  variants={rightVar} className="col-lg-6 p-lg-2 mt-3 mt-lg-0">

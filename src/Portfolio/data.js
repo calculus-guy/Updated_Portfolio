@@ -9,8 +9,8 @@ const Project = [
   },
   {
     id: 1,
-    name: "aahbibi : Live Classes Platform",
-    link: "https://www.aahbibi.com/",
+    name: "HALLOS : Creators Marketplace & Livestreaming Platform",
+    link: "https://www.hallos.net/",
     image: "../../Images/aahbibi.png",
     desc: "A scalable EdTech and creator platform designed to power video-on-demand, live classes, and gamified learning experiences. I led backend development using Node.js, Express, PostgreSQL, and Redis, building secure role-based APIs, live class infrastructure, wallet and payment systems, and quiz-based engagement logic. The platform supports real-time sessions, subscriptions, and creator monetization with production-ready performance and reliability.",
     language: "",

@@ -125,17 +125,16 @@ const stack = [
         stack: "backend",
         
     },
-    // {
-    //     id: 20,
-    //     level: 'Intermediate',
-    //     skill: "Flask",
-    //     stack: "backend",
-        
-    // },
     {
         id: 21,
         level: 'Intermediate',
         skill: "My SQL",
+        stack: "backend",
+    },
+    {
+        id: 19,
+        level: 'Intermediate',
+        skill: "PostgreSQL",
         stack: "backend",
         
     },
