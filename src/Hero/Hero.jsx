@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { VscBriefcase } from "react-icons/vsc";
 import { motion, useInView, useAnimation } from 'framer-motion';
 import SEO from "../SEO";

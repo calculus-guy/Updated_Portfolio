@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { AiOutlineReload } from "react-icons/ai";
 import Project from './data';
 import { motion } from 'framer-motion';
@@ -8,43 +7,6 @@ import { GoLinkExternal } from "react-icons/go";
 
 
 const Portfolio = () => {
-
-
-  const boxVariant = {
-    initial : {
-      // x : width > 0 ? -100 : "0",
-      x : 100,
-      opacity : 0
-    },
-    animate : {
-      opacity : 1,
-      x: 0,
-      transition : {
-        duration: 0.5,
-        staggerChildren : 0.7,
-        when : "beforeChildren",
-      } , 
-    }
-  }
-
-  const transition = { duration: 0.5, ease: "easeInOut", type : "tween" };
-
-  const boxChild = {
-    initial : {
-      // x : width > 0 ? -100 : "0",
-      x : 100,
-      opacity : 0
-    },
-    animate : {
-      opacity : 1,
-      x: 0,
-      transition : {
-        duration: 0.5,
-        staggerChildren : 0.7,
-        when : "beforeChildren",
-      } , 
-    }
-  }
   
 
     const [visible, setVisible] = useState(3)

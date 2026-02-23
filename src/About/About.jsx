@@ -1,10 +1,9 @@
-import React, { useEffect, useRef } from 'react'
-import { FaAward } from "react-icons/fa6";
+import React, { useRef } from 'react'
 import { VscBriefcase } from "react-icons/vsc";
 import { FiFileText } from "react-icons/fi";
 import { BiSupport } from "react-icons/bi";
 import { LuAward } from "react-icons/lu";
-import { motion, useAnimation, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 const About = () => {
 
