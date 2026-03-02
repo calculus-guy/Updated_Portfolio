@@ -37,7 +37,7 @@ responsibilities: [
 ],
     }
   ];  
-  
+   
 
 const Experience = () => {
   return (
