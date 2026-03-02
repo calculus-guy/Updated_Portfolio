@@ -36,7 +36,7 @@ responsibilities: [
   "Added validation, duplicate protection, and activity tracking safeguards that eliminated inconsistent scoring states and ensured data integrity across thousands of evaluations.",
 ],
     }
-  ]; 
+  ];  
   
 
 const Experience = () => {
