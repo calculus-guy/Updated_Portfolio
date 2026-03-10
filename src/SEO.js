@@ -25,7 +25,7 @@ const SEO = ({ title, description, keywords, url, image }) => {
       <meta name="twitter:image" content={image || "https://olawoyin.netlify.app/twitter-image.jpg"} />
 
       {/* Canonical URL (SEO Best Practice) */}
-      <link rel="canonical" href={url} />   
+      <link rel="canonical" href={url} />    
     </Helmet>
   );
 };
